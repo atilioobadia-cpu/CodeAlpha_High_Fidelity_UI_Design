@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,16 +8,16 @@
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <style>
 :root{
-  --brand:#4F46E5; --brand-2:#7C3AED; --brand-soft:#EEF2FF;
-  --bg:#F5F7FB; --card:#FFFFFF; --text:#0F172A; --muted:#64748B; --border:#E2E8F0;
-  --success:#10B981; --warn:#F59E0B; --danger:#EF4444; --radius:20px;
-  --shadow:0 10px 30px rgba(15,23,42,.08);
+  --brand:#057573; --brand-2:#037674; --brand-soft:#e6f1f1; --brand-glow:rgba(5,117,115,.2);
+  --bg:#ebe9e9; --card:#FFFFFF; --text:#111827; --muted:#6c757d; --border:#dee2e6;
+  --success:#057573; --warn:#F59E0B; --danger:#dc3545; --radius:20px;
+  --shadow:0 2px 8px rgba(0,0,0,.06);
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%);min-height:100vh;padding:24px;display:flex;flex-direction:column;align-items:center;gap:24px;}
 h1{color:#fff;font-size:22px;font-weight:800;}
 .grid{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;}
-.phone{width:390px;height:844px;background:var(--bg);border-radius:44px;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.4);flex-shrink:0;}
+.phone{width:390px;height:844px;background:#ffffff;border-radius:44px;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.4);flex-shrink:0;}
 .status{height:48px;display:flex;align-items:center;justify-content:space-between;padding:0 28px 0 24px;font-size:14px;font-weight:600;color:var(--text);background:var(--bg);}
 .status .icons{display:flex;gap:6px;align-items:center;}
 .notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:120px;height:32px;background:#0F172A;border-radius:20px;z-index:10;}
@@ -30,7 +30,7 @@ h1{color:#fff;font-size:22px;font-weight:800;}
 .chip.active{background:var(--brand);color:#fff;border-color:var(--brand);}
 .card{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);border:1px solid var(--border);margin-bottom:12px;}
 .course-card{display:flex;gap:14px;overflow:hidden;}
-.course-thumb{width:84px;height:84px;border-radius:14px;flex-shrink:0;position:relative;overflow:hidden;background:linear-gradient(135deg,#C7D2FE,#A5B4FC);display:flex;align-items:center;justify-content:center;color:#fff;}
+.course-thumb{width:84px;height:84px;border-radius:14px;flex-shrink:0;position:relative;overflow:hidden;background:linear-gradient(135deg,#b2dfdb,#80cbc4);display:flex;align-items:center;justify-content:center;color:#fff;}
 .course-thumb img{width:100%;height:100%;object-fit:cover;}
 .course-thumb .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);}
 .course-info{flex:1;min-width:0;}
@@ -84,7 +84,7 @@ h1{color:#fff;font-size:22px;font-weight:800;}
   <div class="screen">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
       <div><div style="font-size:13px;color:var(--muted);font-weight:600;">Good morning</div><div class="h1" style="margin:0;">Atilio Obadia</div></div>
-      <div style="width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#C7D2FE,#A5B4FC);display:flex;align-items:center;justify-content:center;"><i data-lucide="user" style="color:#fff;width:20px;height:20px;"></i></div>
+      <div style="width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#b2dfdb,#80cbc4);display:flex;align-items:center;justify-content:center;"><i data-lucide="user" style="color:#fff;width:20px;height:20px;"></i></div>
     </div>
     <div class="search"><i data-lucide="search" style="width:18px;height:18px;color:var(--muted);"></i><input placeholder="Search courses, topics..."></div>
     <div class="chips">
@@ -169,3 +169,5 @@ h1{color:#fff;font-size:22px;font-weight:800;}
 <script>lucide.createIcons();</script>
 </body>
 </html>
+
+
